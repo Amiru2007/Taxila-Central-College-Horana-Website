@@ -7,7 +7,7 @@ body {
     to {background-color: rgb(0, 225, 255);}
   }
   
-  div {
+  body {
     width: 100px;
     height: 100px;
     background-color: rgb(0, 225, 255);
