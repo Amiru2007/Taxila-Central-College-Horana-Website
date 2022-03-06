@@ -125,3 +125,58 @@ h5 {
   overflow-y: auto;
   height: 400px;
 }
+
+footer {
+  background: white;
+  
+}
+
+footer::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.F {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: transparent url("facebook.png") no-repeat 0 0;
+}
+
+.F:hover {
+  background-position: 0 -40px;
+}
+
+.I {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: transparent url("insta.png") no-repeat 0 0;
+}
+
+.I:hover {
+  background-position: 0 -40px;
+}
+
+.L {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: transparent url("LinkedIn.png") no-repeat 0 0;
+}
+
+.L:hover {
+  background-position: 0 -40px;
+}
+
+.Y {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: transparent url("youtube.png") no-repeat 0 0;
+}
+
+.Y:hover {
+  background-position: 0 -40px;
+}

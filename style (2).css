@@ -94,6 +94,10 @@ h3 {
   border: 3px solid lightseagreen;
   padding: 10px;
   margin: 10px;
+  border-bottom-left-radius: 33px;
+  border-bottom-right-radius: 33px;
+  border-top-left-radius: 33px;
+  border-top-right-radius: 33px;
 }
 
 h5 {
@@ -102,6 +106,10 @@ h5 {
   padding: 10px;
   margin: 10px;
   text-align: left;
+  border-bottom-left-radius: 33px;
+  border-bottom-right-radius: 33px;
+  border-top-left-radius: 33px;
+  border-top-right-radius: 33px;
 }
 
 h4 {
@@ -109,6 +117,10 @@ h4 {
   border: 3px solid lightseagreen;
   padding: 10px;
   margin: 10px;
+  border-bottom-left-radius: 33px;
+  border-bottom-right-radius: 33px;
+  border-top-left-radius: 33px;
+  border-top-right-radius: 33px;
 }
 
 footer {
