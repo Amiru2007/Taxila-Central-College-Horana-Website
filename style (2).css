@@ -6,12 +6,13 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
 header {
   background: white;
+  
 }
 
 header::after{
@@ -80,23 +81,87 @@ p {
   text-indent: 50px;
 }
 
-tr:hover {
-  background-color: lightseagreen;
+table {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 13px;
 }
 
 h3 {
-  width: 250px;
+  width: 300px;
   border: 3px solid lightseagreen;
-  padding: 25px;
-  margin: 20px;
-  border-radius: 5%;
+  padding: 10px;
+  margin: 10px;
 }
 
 h5 {
   width: 300px;
   border: 3px solid lightseagreen;
-  padding: 25px;
-  margin: 20px;
-  border-bottom-right-radius: 7%;
-  border-top-right-radius: 7%;
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+}
+
+h4 {
+  width: 300px;
+  border: 3px solid lightseagreen;
+  padding: 10px;
+  margin: 10px;
+}
+
+footer {
+  background: white;
+  
+}
+
+footer::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.F {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: transparent url("facebook.png") no-repeat 0 0;
+}
+
+.F:hover {
+  background-position: 0 -40px;
+}
+
+.I {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: transparent url("insta.png") no-repeat 0 0;
+}
+
+.I:hover {
+  background-position: 0 -40px;
+}
+
+.L {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: transparent url("LinkedIn.png") no-repeat 0 0;
+}
+
+.L:hover {
+  background-position: 0 -40px;
+}
+
+.Y {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: transparent url("youtube.png") no-repeat 0 0;
+}
+
+.Y:hover {
+  background-position: 0 -40px;
 }
