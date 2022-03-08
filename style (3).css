@@ -1,95 +1,162 @@
-body {
-    margin: 0;
-    background: lightskyblue;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 300S;
-}
-
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
-
-header {
-  background: white;
-}
-
-header::after{
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.logo {
-  float: left;
-  padding: 10px 0;
-}
-
-nav {
-  float: right;
-}
-
-nav ul {
+*{
   margin: 0;
   padding: 0;
-  list-style: none;
+  box-sizing: border-box;
 }
-
-nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 23px;
-
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: url(light_blue.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.navbar{
+  height: 70px;
+  width: 100%;
+  padding: 14px 30px;
+  background-color: white;
   position: relative;
 }
-
-nav a {
-  color: #444;
+.navbar .nav-header{
+  display: inline;
+}
+.navbar .nav-header .nav-logo{
+  display: inline-block;
+  margin-top: -7px;
+}
+.navbar .nav-links{
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+ 
+.navbar .nav-links .loginBtn{
+  display: inline-block;
+  padding: 5px 15px;
+  margin-left: 20px;
+  font-size: 17px;
+  color: rgb(9, 14, 90);
+}
+.navbar .nav-links a{
+  padding: 10px 12px;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
+  font-weight: 500;
+  color: black;
 }
 
-nav a:hover {
-  color: #000;
+.navbar .nav-links a:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+ 
+.navbar #nav-check, .navbar .nav-btn{
+  display: none;
+}
+ 
+@media (max-width:1050px) {
+  .navbar .nav-btn{
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .navbar .nav-btn label {
+    display: inline-block;
+    width: 80px;
+    height: 70px;
+    padding: 25px;
+  }
+  .navbar .nav-btn label span {
+    display: block;
+    height: 10px;
+    width: 25px;
+    border-top: 3px solid #eee;
+  }
+  .navbar .nav-btn label:hover, .navbar #nav-check:checked ~ .nav-btn label {
+    background-color: rgb(9, 14, 90);
+  }
+  .navbar .nav-links{
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 50%;
+    background-color: rgb(9, 14, 90);
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 70px;
+    right: 0px;
+  }
+  .navbar .nav-links a {
+    display: block;
+  }
+
+  .navbar #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+
+  .navbar #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+  }
+  .navbar .nav-links .loginBtn {
+    padding: 10px 40px ;
+    margin: 20px;
+    font-size:  18px;
+    font-weight: bold;
+    color: rgb(9, 14, 90);
+  }
 }
 
-nav a::before {
-  content: '';
-  display: block;
-  height: 5px;
-  width: 100%;
-  background-color: #444;
-
-  position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before {
-  width: 100%;
-}
-
-p {
+h4 {
   text-align: justify;
+  padding-top: 1px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 1px;
 }
 
 p {
   text-indent: 50px;
 }
 
+ul {
+  padding: 7%;
+}
+
+p {
+  padding-left: 1%;
+  text-align: justify;
+  padding-top: 5px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 5px;
+}
+
+table {
+  width: 90%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 1%;
+  padding-left: 1%;
+  margin: 1%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+th {
+  font-size: 30px;
+}
+
 tr:hover {
   background-color: lightseagreen;
 }
 
+h2 {
+  padding: 2%;
+}
+
 h3 {
-  width: 250px;
-  border: 3px solid lightseagreen;
   padding: 25px;
   margin: 20px;
   border-radius: 5%;
+  text-align: center;
 }
 
 h5 {
@@ -118,12 +185,14 @@ h5 {
 
 .first-column {
   overflow-y: auto;
-  height: 400px;
+  height: 650px;
+  width: 55%;
 }
 
 .second-column {
   overflow-y: auto;
-  height: 400px;
+  height: 650px;
+  width: 45%;
 }
 
 footer {

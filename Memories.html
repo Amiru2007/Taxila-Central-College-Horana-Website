@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Memories</title>
-        <link href="style (4).css" rel="stylesheet" type="text/css">
+        <link href="style (2).css" rel="stylesheet" type="text/css">
         <meta charset="UTF-8">
         <style>
             h1 {
@@ -19,50 +19,118 @@
               color: black;
               font-family: Trebuchet MS;
             }
+            .slider {
+              width: 500px;
+              height: 300px;
+              background-color: yellow;
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 0px;
+              text-align: center;
+              overflow: hidden;
+            }
+            .image-container {
+              width: 1500px;
+              background-color: gray;
+              height: 300px;
+              clear: both;
+              position: relative;
+              -webkit-transition: left 2s;
+              -moz-transition: left 2s;
+              -o-transition: left 2s;
+              transition: left 2s;
+            }
+            .slide {
+              float: left;
+              margin: 0px;
+              padding: 0px;
+              position: relative;
+            }
+            #slide-1:target ~ .image-container {
+              left: 0px;
+            }
+            #slide-2:target ~ .image-container {
+              left: -500px;
+            }
+            #slide-3:target ~ .image-container {
+              left: -1000px;
+            }
+            .buttons {
+              position: relative;
+              top: -20px;
+            }
+            .buttons a {
+              display: inline-block;
+              height: 15px;
+              width: 15px;
+              border-radius: 50px;
+              background-color: lightseagreen;
+            }
         </style>
     </head>
     <body background="tcc.jpg">
         <header>
-            <div class="container">
-
-                <img src="logo (2).png" alt="logo" class="logo">
-
-                <nav>
-                    <ul>
-                        <li><a href="Taxila Central College.html">Home</a></li>
-                        <li><a href="S&A.html">Societies & Associations</a></li>
-                        <li><a href="Contacts.html">Contacts</a></li>
-                        <li><a href="Sports.html">Sports</a></li>
-                        <li><a href="History.html">History</a></li>
-                        <li><a href="Memories.html">Memories</a></li>
-                        <li><a href="AESTHTICS.html">Aesthetics</a></li>
-                    </ul>
-                </nav>
-
+          <div class="navbar">
+            <div class="nav-header">
+              <div class="nav-logo">
+                <a href="#">
+                  <img src="logo (2).png" width="50px" alt="logo">
+                </a>
+              </div>
             </div>
+              <input type="checkbox" id="nav-check">
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            <div class="nav-links">
+              <a href="Taxila Central College.html">Home</a>
+              <a href="Sports.html">Sports</a>
+              <a href="AESTHTICS.html">Aesthetics</a>
+              <a href="S&A.html">Sosieties & Associations</a>
+              <a href="Memories.html">Memories</a>
+              <a href="History.html">History</a>
+              <a href="Contacts.html">Contacts</a>
+              <button class="loginBtn">Login</button>
+            </div>
+          </div>
         </header>
+          <br>
+          <br>
         <center><h1>School Memories</h1></center>
-        <div class="slideshow middle">
-
-          <div class="slides">
-              <input type="radio" name="r" id="r1" checked>
-              <input type="radio" name="r" id="r2">
-              <input type="radio" name="r" id="r3">
-              <div class="slide s1">
-                  <img src="thakshila.jpg">
-              </div>
-              <div class="slide">
-                  <img src="thakshila flag.png">
-              </div>
-              <div class="slide">
-                  <img src="thakshila flag.jpg">
-              </div>
+          <br>
+          <br>
+          <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+              <img src="logo (2).png" class="slide" width="500" height="300" />
+              <img src="logo.png" class="slide" width="500" height="300" />
+            </div>
+            <div class="buttons">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+            </div>
           </div>
-          <div class="navigation">
-              <label for="r1" class="bar"></label>
-              <label for="r2" class="bar"></label>
-              <label for="r3" class="bar"></label>
-          </div>
-        </div>
+          <br>
+          <br>
+        <footer>
+            <div class="container">
+                <center>
+                <br>
+                <br>
+                <a class="F" href="https://www.facebook.com/Taxila/"></a>
+                <a class="I" href="https://www.instagram.com/taxila_central_college/?hl=en"></a>
+                <a class="L" href="https://www.linkedin.com/company/taxila-central-college-sl"></a>
+                <a class="Y" href="https://www.youtube.com/channel/UCPMsN-OCxZ2fEV5E8iSo7tQ"></a>
+                    <br>
+                <h6>Copyright © Amiru Upek<br><br><br><br></h6>
+                </center>
+            </div>
+        </footer>
     </body>
 </html>

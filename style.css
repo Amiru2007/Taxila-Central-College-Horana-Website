@@ -1,16 +1,37 @@
-body {
-    background-color: rgb(0, 150, 117);
-  }
-  
-@keyframes example {
-    from {background-color: rgb(0, 60, 255);}
-    to {background-color: rgb(0, 225, 255);}
-  }
-  
-  body {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(0, 225, 255);
-    animation-name: example;
-    animation-duration: 4s;
-  }
+*{margin: 0px;
+  padding: 0px;}
+
+#nav_bar {background-color: #a22b2f;
+          box-shadow: 0px 2px 10px;
+          height: 45px;
+          text-align: center;}
+
+#nav_bar > ul > li {display: inline-block;}
+
+#nav_bar ul > li > a {color: white;
+                      display: block;
+                      text-decoration: none;
+                      font-weight: bold;
+                      padding-left: 10px;
+                      padding-right: 10px;
+                      line-height: 45px;}
+
+#nav_bar ul li ul {display: none;
+                   list-style: none;
+                   position: absolute;
+                   background: #e2e2e2;
+                   box-shadow: 0px 2px 10px;
+                   text-align: left;}
+
+#nav_bar ul li a:hover {background: #8e262a;}
+
+
+#nav_bar a:active {background: white;}
+
+#nav_bar ul li:hover ul {display: block;}
+
+#nav_bar ul li ul li a {color: #252525;
+                        display: block;}
+
+#nav_bar ul li ul li a:hover {background: #4485f5;
+                              color: #fff;}
