@@ -1,76 +1,107 @@
-body {
-    margin: 0;
-    background: lightskyblue;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 300S;
-}
-
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
-
-header {
-  background: white;
-  
-}
-
-header::after{
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.logo {
-  float: left;
-  padding: 10px 0;
-}
-
-nav {
-  float: right;
-}
-
-nav ul {
+*{
   margin: 0;
   padding: 0;
-  list-style: none;
+  box-sizing: border-box;
 }
-
-nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 23px;
-
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: url(light_blue.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.navbar{
+  height: 70px;
+  width: 100%;
+  padding: 14px 30px;
+  background-color: white;
   position: relative;
 }
-
-nav a {
-  color: #444;
+.navbar .nav-header{
+  display: inline;
+}
+.navbar .nav-header .nav-logo{
+  display: inline-block;
+  margin-top: -7px;
+}
+.navbar .nav-links{
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+ 
+.navbar .nav-links .loginBtn{
+  display: inline-block;
+  padding: 5px 15px;
+  margin-left: 20px;
+  font-size: 17px;
+  color: Black;
+}
+.navbar .nav-links a{
+  padding: 10px 12px;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
+  font-weight: 550;
+  color: black;
 }
 
-nav a:hover {
-  color: #000;
+.navbar .nav-links a:hover{
+  background-color: rgba(0, 0, 0, 0.3);
 }
-
-nav a::before {
-  content: '';
-  display: block;
-  height: 5px;
-  width: 100%;
-  background-color: #444;
-
-  position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
+ 
+.navbar #nav-check, .navbar .nav-btn{
+  display: none;
 }
+ 
+@media (max-width:1050px) {
+  .navbar .nav-btn{
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .navbar .nav-btn label {
+    display: inline-block;
+    width: 80px;
+    height: 70px;
+    padding: 25px;
+  }
+  .navbar .nav-btn label span {
+    display: block;
+    height: 10px;
+    width: 25px;
+    border-top: 3px solid #eee;
+  }
+  .navbar .nav-btn label:hover, .navbar #nav-check:checked ~ .nav-btn label {
+    background-color: lightseagreen;
+  }
+  .navbar .nav-links{
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 50%;
+    background-color: lightseagreen;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 70px;
+    right: 0px;
+  }
+  .navbar .nav-links a {
+    display: block;
+  }
 
-nav a:hover::before {
-  width: 100%;
+  .navbar #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+
+  .navbar #nav-check:checked ~ .nav-links {
+    height: 600%;
+    overflow-y: auto;
+  }
+  .navbar .nav-links .loginBtn {
+    padding: 10px 40px ;
+    margin: 20px;
+    font-size:  18px;
+    color: lightseagreen;
+  }
 }
 
 p {
@@ -122,7 +153,6 @@ h4 {
 
 footer {
   background: white;
-  
 }
 
 footer::after{
@@ -240,4 +270,60 @@ input[name="r"] {
 
 #r3:checked ~ .s1 {
   margin-left: -40%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.img-gallery {
+  width: 80%;
+  margin: 20px auto 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+}
+
+.img-gallery img {
+  width: 100%;
+  cursor: pointer;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.img-gallery img:hover {
+  transform: scale(0.96);
+  transition: all 0.3s ease-out;
+  border-radius: 20px;
+  box-shadow: 0 32px 75px rgba(68,77,136, 02);
+}
+
+.full-img {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.88);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.full-img img {
+  width: 90%;
+  max-width: 1000px;
+}
+
+.full-img span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 33px;
+  color: #fff;
+  text-shadow: 0 0 3px black;
+  cursor: pointer;
 }
