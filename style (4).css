@@ -28,7 +28,6 @@ body{
   float: right;
   font-size: 18px;
 }
-
 .navbar .nav-links a{
   padding: 10px 12px;
   text-decoration: none;
@@ -89,6 +88,7 @@ body{
     height: 600%;
     overflow-y: auto;
   }
+
 }
 
 p {
