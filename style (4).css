@@ -34,12 +34,12 @@ body{
   padding: 5px 15px;
   margin-left: 20px;
   font-size: 17px;
-  color: Black;
+  color: black;
 }
 .navbar .nav-links a{
   padding: 10px 12px;
   text-decoration: none;
-  font-weight: 550;
+  font-weight: 500;
   color: black;
 }
 
@@ -93,7 +93,7 @@ body{
   }
 
   .navbar #nav-check:checked ~ .nav-links {
-    height: 600%;
+    height: calc(100vh - 70px);
     overflow-y: auto;
   }
   .navbar .nav-links .loginBtn {
@@ -153,6 +153,7 @@ h4 {
 
 footer {
   background: white;
+  
 }
 
 footer::after{
@@ -270,60 +271,4 @@ input[name="r"] {
 
 #r3:checked ~ .s1 {
   margin-left: -40%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.img-gallery {
-  width: 80%;
-  margin: 20px auto 50px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 30px;
-}
-
-.img-gallery img {
-  width: 100%;
-  cursor: pointer;
-  height: 100%;
-  border-radius: 20px;
-}
-
-.img-gallery img:hover {
-  transform: scale(0.96);
-  transition: all 0.3s ease-out;
-  border-radius: 20px;
-  box-shadow: 0 32px 75px rgba(68,77,136, 02);
-}
-
-.full-img {
-  width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.88);
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
-}
-
-.full-img img {
-  width: 90%;
-  max-width: 1000px;
-}
-
-.full-img span {
-  position: absolute;
-  top: 5%;
-  right: 5%;
-  font-size: 33px;
-  color: #fff;
-  text-shadow: 0 0 3px black;
-  cursor: pointer;
 }

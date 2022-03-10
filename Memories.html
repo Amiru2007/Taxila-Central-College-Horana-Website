@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Memories</title>
-        <link href="style (4).css" rel="stylesheet" type="text/css">
+        <link href="style (2).css" rel="stylesheet" type="text/css">
         <meta charset="UTF-8">
         <style>
             h1 {
@@ -102,37 +102,20 @@
           <br>
         <center><h1>School Memories</h1></center>
           <br>
-          <div class="full-img" id="fullImgBox">
-            <img src="Memories 0.jpg" id="fullImg">
-            <span onclick="closeFullImg()">X</span>
-          </div>
-            <div class="img-gallery">
-                <img src="Memories 0.jpg" onclick="openFullImg(this.src)">
-                <img src="Memories 1.jpg" onclick="openFullImg(this.src)">
-                <img src="Memories 2.jpg" onclick="openFullImg(this.src)">
-                <img src="Memories 3.jpg" onclick="openFullImg(this.src)">
-                <img src="Memories 4.jpg" onclick="openFullImg(this.src)">
-                <img src="Memories 5.jpg" onclick="openFullImg(this.src)">
-                <img src="Memories 6.jpg" onclick="openFullImg(this.src)">
-                <img src="Memories 7.jpg" onclick="openFullImg(this.src)">
-                <img src="Memories 8.jpg" onclick="openFullImg(this.src)">
-                <img src="Memories 9.jpg" onclick="openFullImg(this.src)">
-                <img src="Memories 10.jpg" onclick="openFullImg(this.src)">
-                <img src="Memories 11.jpg" onclick="openFullImg(this.src)">
+          <br>
+          <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+              <img src="logo (2).png" class="slide" width="500" height="300" />
+              <img src="logo.png" class="slide" width="500" height="300" />
             </div>
-        <script>
-           var fullImgBox = document.getElementById("fullImgBox");
-           var fullImg = document.getElementById("fullImg");
-    
-           function openFullImg(pic){
-             fullImgBox.style.display = "flex";
-             fullImg.src = pic;
-           }
-    
-           function closeFullImg(){
-             fullImgBox.style.display = "none";
-           }
-        </script>
+            <div class="buttons">
+              <a href="#slide-1"></a>
+              <a href="#slide-2"></a>
+            </div>
+          </div>
           <br>
           <br>
         <footer>
@@ -144,7 +127,6 @@
                 <a class="I" href="https://www.instagram.com/taxila_central_college/?hl=en"></a>
                 <a class="L" href="https://www.linkedin.com/company/taxila-central-college-sl"></a>
                 <a class="Y" href="https://www.youtube.com/channel/UCPMsN-OCxZ2fEV5E8iSo7tQ"></a>
-                    <br>
                     <br>
                 <h6>Copyright © Amiru Upek<br><br><br><br></h6>
                 </center>
