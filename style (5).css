@@ -34,12 +34,20 @@ body{
   padding: 5px 15px;
   margin-left: 20px;
   font-size: 17px;
+<<<<<<< HEAD
   color: rgb(0, 102, 109);
+=======
+  color: lightsteelblue;
+>>>>>>> dfbb08ceaf5462e2940c83edf96b6dd3e3abb983
 }
 .navbar .nav-links a{
   padding: 10px 12px;
   text-decoration: none;
+<<<<<<< HEAD
   font-weight: 550;
+=======
+  font-weight: 500;
+>>>>>>> dfbb08ceaf5462e2940c83edf96b6dd3e3abb983
   color: black;
 }
 
@@ -68,7 +76,11 @@ body{
     display: block;
     height: 10px;
     width: 25px;
+<<<<<<< HEAD
     border-top: 3px solid black;
+=======
+    border-top: 3px solid #eee;
+>>>>>>> dfbb08ceaf5462e2940c83edf96b6dd3e3abb983
   }
   .navbar .nav-btn label:hover, .navbar #nav-check:checked ~ .nav-btn label {
     background-color: rgb(0, 102, 109);
@@ -93,9 +105,13 @@ body{
   }
 
   .navbar #nav-check:checked ~ .nav-links {
+<<<<<<< HEAD
     height: 600%;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+=======
+    height: calc(100vh - 70px);
+>>>>>>> dfbb08ceaf5462e2940c83edf96b6dd3e3abb983
     overflow-y: auto;
   }
   .navbar .nav-links .loginBtn {
@@ -104,6 +120,7 @@ body{
     font-size:  18px;
     font-weight: bold;
     color: rgb(0, 102, 109);
+<<<<<<< HEAD
     background-color: black;
   }
 }
@@ -111,6 +128,20 @@ body{
 h2 {
   color: lightgrey;
 }
+=======
+  }
+}
+
+table {
+  width: 90%;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 13px;
+}
+
+>>>>>>> dfbb08ceaf5462e2940c83edf96b6dd3e3abb983
 h3 {
   width: 330px;
   border: 3px solid lightseagreen;
@@ -130,7 +161,10 @@ h3 {
 h4 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   display: inline-block;
+<<<<<<< HEAD
   padding-left: 6px;
+=======
+>>>>>>> dfbb08ceaf5462e2940c83edf96b6dd3e3abb983
   text-align: left;
 }
 

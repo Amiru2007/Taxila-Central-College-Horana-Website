@@ -34,12 +34,20 @@ body{
   padding: 5px 15px;
   margin-left: 20px;
   font-size: 17px;
+<<<<<<< HEAD
   color: Black;
+=======
+  color: black;
+>>>>>>> dfbb08ceaf5462e2940c83edf96b6dd3e3abb983
 }
 .navbar .nav-links a{
   padding: 10px 12px;
   text-decoration: none;
+<<<<<<< HEAD
   font-weight: 550;
+=======
+  font-weight: 500;
+>>>>>>> dfbb08ceaf5462e2940c83edf96b6dd3e3abb983
   color: black;
 }
 
@@ -93,7 +101,11 @@ body{
   }
 
   .navbar #nav-check:checked ~ .nav-links {
+<<<<<<< HEAD
     height: 600%;
+=======
+    height: calc(100vh - 70px);
+>>>>>>> dfbb08ceaf5462e2940c83edf96b6dd3e3abb983
     overflow-y: auto;
   }
   .navbar .nav-links .loginBtn {

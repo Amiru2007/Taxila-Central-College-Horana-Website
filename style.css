@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
   margin: 0;
   padding: 0;
@@ -222,3 +223,42 @@ footer::after{
 .Y:hover {
   background-position: 0 -40px;
 }
+=======
+*{margin: 0px;
+  padding: 0px;}
+
+#nav_bar {background-color: #a22b2f;
+          box-shadow: 0px 2px 10px;
+          height: 45px;
+          text-align: center;}
+
+#nav_bar > ul > li {display: inline-block;}
+
+#nav_bar ul > li > a {color: white;
+                      display: block;
+                      text-decoration: none;
+                      font-weight: bold;
+                      padding-left: 10px;
+                      padding-right: 10px;
+                      line-height: 45px;}
+
+#nav_bar ul li ul {display: none;
+                   list-style: none;
+                   position: absolute;
+                   background: #e2e2e2;
+                   box-shadow: 0px 2px 10px;
+                   text-align: left;}
+
+#nav_bar ul li a:hover {background: #8e262a;}
+
+
+#nav_bar a:active {background: white;}
+
+#nav_bar ul li:hover ul {display: block;}
+
+#nav_bar ul li ul li a {color: #252525;
+                        display: block;}
+
+#nav_bar ul li ul li a:hover {background: #4485f5;
+                              color: #fff;}
+>>>>>>> dfbb08ceaf5462e2940c83edf96b6dd3e3abb983
