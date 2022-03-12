@@ -5,7 +5,7 @@
 }
 body{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-image: url(light_blue.png);
+  background-image: url(light_blue1.png);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -15,6 +15,7 @@ body{
   padding: 14px 30px;
   background-color: white;
   position: relative;
+  box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.199);
 }
 .navbar .nav-header{
   display: inline;
@@ -38,11 +39,6 @@ body{
 
 .navbar .nav-links a:hover{
   background-color: rgba(0, 0, 0, 0.3);
-}
-
-.navbar .nav-links a:active {
-  background-color: lightskyblue;
-  display: always;
 }
  
 .navbar #nav-check, .navbar .nav-btn{
@@ -126,7 +122,6 @@ p {
 table {
   width: 97%;/*
   padding-top: -1%;*/
-  text-align: center;
   padding-bottom: 1%;
   padding-right: 1%;
   padding-left: 1%;
@@ -180,19 +175,20 @@ h5 {/*
 .first-column {
   overflow-y: auto;
   height: 1080px;
-  width: 55%;
+  width: 60%;
+  align-items: center;
 }
 
 .second-column {
   padding: 9px;
   overflow-y: auto;
   height: 1080px;
-  width: 45%;
+  width: 40%;
 }
 
 footer {
-  background: white;
-  
+  background-color: white;
+  box-shadow: 0px 5px 16px 0px rgb(0, 0, 0);
 }
 
 footer::after{
@@ -307,4 +303,11 @@ footer::after{
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+hr {
+  height:5px;
+  border-width: 100%;
+  color:black;
+  background-color: black;
 }
