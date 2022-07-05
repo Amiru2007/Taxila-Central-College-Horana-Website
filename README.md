@@ -8,5 +8,6 @@ https://codepen.io/search/pens?q=amiru+weerathunga
 
 My other projects,
 https://github.com/Amiru2007/Taxila-Central-College-Website-2
+
 Challenge me on Chess.com,
 https://friend.chess.com/AfFi
